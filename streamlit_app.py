@@ -3,7 +3,7 @@ from openai import OpenAI
 import requests  # Library for making HTTP requests (for internet access)
 
 # Embed the API key directly (NOT recommended for production)
-OPENAI_API_KEY = kannan
+
 
 # Show title and description
 st.title("💬 Chatbot with Internet Access")
@@ -13,7 +13,7 @@ st.write(
 )
 
 # API key handling
-openai_api_key = OPENAI_API_KEY
+openai_api_key = kannan
 
 # Initialize the OpenAI client
 client = OpenAI(api_key=openai_api_key)
